@@ -29,7 +29,7 @@ function is_weixn(){
 }
 
 var code = GetQueryString("c");
-if(typeof(code) != "undefined" && code != nul&&code!=''){
+if(typeof(code) != "undefined" && code != null&&code!=''){
 	if(is_weixn()){
 		location.href = "http://www.shaquanquan.com/"+code;
 	}else{
