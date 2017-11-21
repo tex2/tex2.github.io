@@ -12,29 +12,6 @@
 <body>
 </body>
 <script type="text/javascript">
-function GetQueryString(name)
-{
-     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-     var r = window.location.search.substr(1).match(reg);
-     if(r!=null)return  unescape(r[2]); return null;
-}
-
-function is_weixn(){  
-    var ua = navigator.userAgent.toLowerCase();  
-    if(ua.match(/MicroMessenger/i)=="micromessenger") {  
-        return true;  
-    } else {  
-        return false;  
-    }  
-}
-
-var code = GetQueryString("c");
-if(typeof(code) != "undefined" && code != null&&code!=''){
-	if(is_weixn()){
-		location.href = "http://www.shaquanquan.com/"+code;
-	}else{
-		location.href = "http://www.shaquanquan.com/"+code;
-	}
-}
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('h k(a){3 b=A z("(^|&)"+a+"=([^&]*)(&|$)");3 r=y.6.x.u(1).f(b);4(r!=7)5 t(r[2]);5 7}h 8(){3 a=m.n.o();4(a.f(/p/i)=="q"){5 s}e{5 B}}3 0=k("c");4(v(0)!="w"&&0!=7&&0!=\'\'){4(8()){6.9="j://g.d.l/"+0}e{6.9="j://g.d.l/"+0}}',38,38,'code|||var|if|return|location|null|is_weixn|href||||shaquanquan|else|match|www|function||http|GetQueryString|com|navigator|userAgent|toLowerCase|MicroMessenger|micromessenger||true|unescape|substr|typeof|undefined|search|window|RegExp|new|false'.split('|'),0,{}))
 </script>
 </html>
